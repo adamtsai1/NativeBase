@@ -37,6 +37,10 @@ export class DatePicker extends React.Component {
     }
   }
 
+  clearDate() {
+    this.setState({ chosenDate: undefined });
+  }
+
   showDatePicker() {
     if (Platform.OS === "android") {
       this.openAndroidDatePicker();
